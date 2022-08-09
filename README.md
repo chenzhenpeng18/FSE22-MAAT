@@ -1,6 +1,6 @@
 # [ESEC/FSE 2022] MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software
 
-Welcome to visit the homepage of our ESEC/FSE'22 paper entitled "MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software". The homepage contains scripts and data used in this paper.
+Welcome to visit the homepage of our ESEC/FSE'22 paper entitled "MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software". The homepage contains the source code of MAAT and other existing bias mitigation methods that we use in our paper, as well as the intermediate results, the installation instructions, and a replication guideline.
 
 ## Experimental environment
 
@@ -84,10 +84,10 @@ The repository contains the following folders:
 * ```RQ1&2_results/```, ```RQ3_results/```, ```RQ4_results/```, and ```RQ5_results/``` contain the raw results of the models after applying different bias mitigation methods/strategies. Each file in these folders has 53 columns, with the first column indicating the metric, the next 50 columns the metric values of 50 runs, and the last two columns the mean and std values of the 50 runs.
 
 ## Reproduction 
-Researchers can reproduce all the results for all our research questions (RQs) based on the intermediate results provided by us.
+You can reproduce all the results for all our research questions (RQs) based on the intermediate results provided by us.
 
 ### RQ1 (Trade-off Effectiveness)
-The results of RQ1 are shown in Figure 2 and Table 2. Researchers can reproduce the results as follows:
+The results of RQ1 are shown in Figure 2 and Table 2. You can reproduce the results as follows:
 ```
 cd Analysis_code
 python figure2.py
@@ -95,14 +95,14 @@ python table2.py
 ```
 
 ### RQ2 (Applicability)
-The results of RQ2 are shown in Figure 3. Researchers can reproduce the results as follows:
+The results of RQ2 are shown in Figure 3. You can reproduce the results as follows:
 ```
 cd Analysis_code
 python figure3.py
 ```
 
 ### RQ3 (Influence of Fairness and Performance Models)
-The results of RQ3 are shown in Table 3 and Figure 4. Researchers can reproduce the results as follows:
+The results of RQ3 are shown in Table 3 and Figure 4. You can reproduce the results as follows:
 ```
 cd Analysis_code
 python table3.py
@@ -110,21 +110,21 @@ python figure4.py
 ```
 
 ### RQ4 (Influence of Combination Strategies)
-The results of RQ4 are shown in Figure 5. Researchers can reproduce the results as follows:
+The results of RQ4 are shown in Figure 5. You can reproduce the results as follows:
 ```
 cd Analysis_code
 python figure5.py
 ```
 
 ### RQ5 (Multiple Protected Attributes)
-The results of RQ5 are shown in Figure 6. Researchers can reproduce the results as follows:
+The results of RQ5 are shown in Figure 6. You can reproduce the results as follows:
 ```
 cd Analysis_code
 python figure6.py
 ```
 
 ## Step-by-step Guide
-Researchers can also reproduce the results from scratch. We provide the step-by-step guide on how to reproduce the intermediate results and obtain the results for RQs based on them.
+You can also reproduce the results from scratch. We provide the step-by-step guide on how to reproduce the intermediate results and obtain the results for RQs based on them.
 
 ### RQ1 (Trade-off Effectiveness): What fairness-performance trade-off does MAAT achieve?
 This RQ compares MAAT with existing bias mitigation methods by analyzing which trade-off effectiveness levels they belong to overall according to the benchmarking tool Fairea. To answer this RQ, we need to run the code as follows.
@@ -402,11 +402,11 @@ cd Analysis_code
 python figure6.py
 ```
 ## How to Use MAAT in Other Tasks
-It is easy to use MAAT for other decision-making tasks. Researchers just need to revise the `MAAT/utility.py` as follows:
+It is easy to use MAAT for other decision-making tasks. You just need to revise the `MAAT/utility.py` as follows:
 
-(1) The `get_data()` function in the `MAAT/utility.py` specifies the dataset used for training the decision-making models. Researchers can configure the datasets that they would like to use in this function.
+(1) The `get_data()` function in the `MAAT/utility.py` specifies the dataset used for training the decision-making models. You can configure the datasets that they would like to use in this function.
 
-(2) The `get_classifier()` function in the `MAAT/utility.py` specifies the machine learning algorithm used for training models. Researchers can configure the algorithm that they would like to use in this function.
+(2) The `get_classifier()` function in the `MAAT/utility.py` specifies the machine learning algorithm used for training models. You can configure the algorithm that they would like to use in this function.
 
 
 ## Declaration
