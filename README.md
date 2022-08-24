@@ -58,6 +58,8 @@ pip install numpy
 pip install shapely
 pip install matplotlib
 pip install "tensorflow >= 1.13.1, < 2"
+pip install --upgrade protobuf==3.20.0
+pip install fairlearn
 ```
 
 ## Dataset
