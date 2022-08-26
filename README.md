@@ -38,7 +38,7 @@ deactivate` (`activate aif360` and `deactivate` on Windows).
 To install the latest stable version from PyPI, run:
 
 ```bash
-pip install aif360
+pip install 'aif360[all]'
 ```
 
 [comment]: <> (This toolkit can be installed as follows:)
