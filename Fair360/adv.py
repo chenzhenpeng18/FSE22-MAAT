@@ -20,6 +20,7 @@ from aif360.metrics import ClassificationMetric
 from aif360.metrics.utils import compute_boolean_conditioning_vector
 from aif360.algorithms.inprocessing.adversarial_debiasing import AdversarialDebiasing
 from aif360.algorithms.inprocessing.prejudice_remover import PrejudiceRemover
+# import tensorflow.copythonmpat.v1 as tf
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
