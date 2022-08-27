@@ -19,7 +19,7 @@ for i in ['lr']:
 base_map = {1:'Acc', 2: 'Mac-P', 3: 'Mac-R', 4: 'Mac-F1', 5: 'MCC', 6: 'SPD', 7: 'AOD', 8:'EOD'}
 for dataset in ['Adult-Sex','Adult-Race','Compas-Sex','Compas-Race','German-Sex','Bank-Age','Mep-Race']:
     (dataset_pre,dataset_aft) = dataset.lower().split('-')
-    if dataset  == 'Mep_Race':
+    if dataset  == 'Mep-Race':
         dataset_pre = 'mep'
         dataset_aft = 'RACE'
     for i in ['lr']:
