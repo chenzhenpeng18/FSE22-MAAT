@@ -2,6 +2,29 @@
 
 Welcome to visit the homepage of our ESEC/FSE'22 paper entitled "MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software". The homepage contains the source code of MAAT and other existing bias mitigation methods that we use in our paper, as well as the intermediate results, the installation instructions, and a replication guideline.
 
+## Docker image
+In order to facilitate the replication of our study, we provide a docker image, which can be downloaded from https://drive.google.com/file/d/1cQpvZlLdQ5y8AirMX3OK0OcndDd0onki/view?usp=sharing. The docker image includes all the required libraries, datasets, and dependencies for this study. If you use the docker image, you can skip the following `Experimental environment` section and directly replicate our study following the instructions in the Reproduction and Step-by-step Guide sections.
+
+To use the docker image to replicate our study, you need to 
+
+(1) install docker (https://www.docker.com/).
+
+(2) use docker to load the image using the command: 
+	
+	docker load -i fse_maat.tar
+
+(3) excute the image using the commands:
+
+	docker run --name fse_maat_test -idt fse_maat
+
+	docker exec -it fse_maat_test /bin/bash
+
+(4) activate the conda visual environment aif360 using the command:
+	
+	conda activate aif360
+
+Then you can run the code according to our instructions in the Reproduction and Step-by-step Guide sections.
+
 ## Experimental environment
 
 We use Python 3.7 for our experiments. We use the IBM AI Fairness 360 (AIF360) toolkit for implementing bias mitigation methods and computing fairness metrics. 
@@ -95,6 +118,7 @@ cd Analysis_code
 python figure2.py
 python table2.py
 ```
+The commands output `figure2_result` and `table2_result`.
 
 ### RQ2 (Applicability)
 The results of RQ2 are shown in Figure 3. You can reproduce the results as follows:
@@ -102,6 +126,7 @@ The results of RQ2 are shown in Figure 3. You can reproduce the results as follo
 cd Analysis_code
 python figure3.py
 ```
+The commands output `figure3_results`.
 
 ### RQ3 (Influence of Fairness and Performance Models)
 The results of RQ3 are shown in Table 3 and Figure 4. You can reproduce the results as follows:
@@ -110,6 +135,7 @@ cd Analysis_code
 python table3.py
 python figure4.py
 ```
+The commands output `table3_results` and `figure4_results`.
 
 ### RQ4 (Influence of Combination Strategies)
 The results of RQ4 are shown in Figure 5. You can reproduce the results as follows:
@@ -117,6 +143,7 @@ The results of RQ4 are shown in Figure 5. You can reproduce the results as follo
 cd Analysis_code
 python figure5.py
 ```
+The commands output `figure5_result`.
 
 ### RQ5 (Multiple Protected Attributes)
 The results of RQ5 are shown in Figure 6. You can reproduce the results as follows:
@@ -124,6 +151,7 @@ The results of RQ5 are shown in Figure 6. You can reproduce the results as follo
 cd Analysis_code
 python figure6.py
 ```
+The commands output `figure6_results`.
 
 ## Step-by-step Guide
 You can also reproduce the results from scratch. We provide the step-by-step guide on how to reproduce the intermediate results and obtain the results for RQs based on them.
