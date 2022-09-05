@@ -46,7 +46,7 @@ metric_name = "Statistical parity difference"
 val_name = "roc_{}_{}_{}.txt".format(clf_name,dataset_used,attr)
 fout = open(val_name, 'w')
 
-dataset_orig, privileged_groups,unprivileged_groups,optim_options = get_data(dataset_used, attr)
+dataset_orig, privileged_groups,unprivileged_groups = get_data(dataset_used, attr)
 
 metric_ub = 0.05
 metric_lb = -0.05
