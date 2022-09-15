@@ -434,9 +434,9 @@ python figure6.py
 ## How to Use MAAT in Other Tasks
 It is easy to use MAAT for other decision-making tasks. You just need to revise the `MAAT/utility.py` as follows:
 
-(1) The `get_data()` function in the `MAAT/utility.py` specifies the dataset used for training the decision-making models. You can configure the datasets that they would like to use in this function.
+(1) The `get_data()` function in the `MAAT/utility.py` specifies the dataset used for training the decision-making models. You can configure the datasets that you would like to use in this function.
 
-(2) The `get_classifier()` function in the `MAAT/utility.py` specifies the machine learning algorithm used for training models. You can configure the algorithm that they would like to use in this function.
+(2) The `get_classifier()` function in the `MAAT/utility.py` specifies the machine learning algorithm used for training models. You can configure the algorithm that you would like to use in this function.
 
 
 ## Declaration
