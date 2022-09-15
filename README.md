@@ -1,6 +1,8 @@
 # [ESEC/FSE 2022] MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software
 
-Welcome to visit the homepage of our ESEC/FSE'22 paper entitled "MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software". The homepage contains the source code of MAAT and other existing bias mitigation methods that we use in our paper, as well as the intermediate results, the installation instructions, and a replication guideline.
+Welcome to visit the homepage of our ESEC/FSE'22 paper entitled "MAAT: A Novel Ensemble Approach to Addressing Fairness and Performance Bugs for Machine Learning Software". The homepage contains the source code of MAAT and other existing bias mitigation methods that we use in our paper, as well as the intermediate results, the installation instructions, and a replication guideline. 
+
+DOI: https://doi.org/10.5522/04/21120121.v1
 
 ## Docker image
 In order to facilitate the replication of our study, we provide a docker image, which can be downloaded from https://drive.google.com/file/d/1xM_rkUhg7RzcZGCUIvDkLFSgvcgFhcic/view?usp=sharing. The docker image includes all the required libraries, datasets, and dependencies for this study. If you use the docker image, you can skip the following `Experimental environment` section and directly replicate our study following the instructions in the Reproduction and Step-by-step Guide sections.
